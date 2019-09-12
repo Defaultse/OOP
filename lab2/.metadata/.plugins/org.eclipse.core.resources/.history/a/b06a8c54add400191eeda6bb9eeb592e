@@ -1,0 +1,12 @@
+package probem5;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Iphone phone1 = new Iphone("XS MAX", "first");
+    System.out.println(phone1.getModel());
+    System.out.println(phone1.getColor());
+	}
+
+}

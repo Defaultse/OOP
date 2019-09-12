@@ -1,0 +1,50 @@
+package probem5;
+
+public class Iphone {
+	
+static String model;
+static String color;
+
+public enum Color{
+		
+		 SPACEGREY("1"), 
+		 MATTEBLACK("2"), 
+		 ROSEGOLD("3"), 
+		 WHITE("4");
+		 
+	
+	
+	 
+	    
+	
+}
+
+Iphone(String model, String color){
+	this.model = model;
+	this.color = color;
+}
+void test() {
+	
+}
+void test(int a, int b) {
+	Syste
+}
+
+static String getModel() {
+	return model;
+}
+
+static String getColor() {	
+   switch(color) {
+   case SpaceGrey:
+	   return "В наличии";
+	   break;
+   case MatteBlack:
+	   return "Нет в наличии";
+	   break;
+	   
+   }
+   
+}
+	
+}

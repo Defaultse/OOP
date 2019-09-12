@@ -1,0 +1,29 @@
+package problem3;
+
+public class Data {
+private double maximum;
+private double average;
+private int number;
+
+Data(int num) {	
+	this.number = num; 
+	findAverage();
+	findMax();
+}
+
+public void findAverage(){
+this.average=(average+=number)/2;
+}
+
+public void findMax() {
+	this.maximum = (Math.max(maximum,number));
+}
+
+public double getMax() {
+	return maximum;
+}
+
+public double getAverage() {
+	return average;
+}
+}

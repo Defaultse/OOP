@@ -1,0 +1,32 @@
+package problem4;
+
+public class Time {
+public int hour;
+public int minute;
+public int second;
+
+public Time(int hour1,int minute1 ,int second1) {
+	hour = hour1;
+	minute = minute1;
+	second = second1;
+	SettingTime();
+}
+
+public void SettingTime() {
+	
+}
+
+public String toUniversal() {
+	
+}
+
+
+public String toStandard() {
+	
+}
+
+public String add() {
+	
+}
+
+}

@@ -1,0 +1,27 @@
+package problem3;
+
+public class Data {
+private double sum;
+private double max;
+private int cnt;
+
+Data() {
+}
+
+void add(int n) {
+    this.sum += (double)n;
+    ++this.cnt;
+    if ((double)n > this.max) {
+        this.max = (double)n;
+    }
+
+}
+
+double getAverage() {
+    return this.cnt != 0 ? this.sum / (double)this.cnt : 0;
+}
+
+double getMax() {
+    return this.max;
+}
+}

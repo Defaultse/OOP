@@ -1,0 +1,41 @@
+package problem4;
+
+public class Time {
+public int hour;
+public int minute;
+public int second;
+
+public Time(int hour1,int minute1 ,int second1) {
+	hour = hour1;
+	minute = minute1;
+	second = second1;
+	//SettingTime();
+}
+
+public void SettingTime() {
+	
+}
+
+public String toUniversal() {
+	String converted = this.hour+":"+this.minute+":"+this.second+" ";
+	return converted;
+}
+
+
+public String toStandard() {
+int hours, minutes, seconds;
+hours=hour-12;
+minutes=minute;
+seconds=second;
+String converted = hours+":"+minutes+":"+seconds+" "+"PM";
+return converted;
+}
+
+public void add(int hours, int minutes, int seconds) {
+	this.hour = this.hour + hours;
+	this.minute = this.minute + minutes;
+	this.second = this.second + seconds;
+	String converted = this.hour+":"+this.minute+":"+this.second+" ";	
+}
+
+}

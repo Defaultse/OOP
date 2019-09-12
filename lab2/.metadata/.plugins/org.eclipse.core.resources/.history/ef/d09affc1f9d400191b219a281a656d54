@@ -1,0 +1,29 @@
+package problem3;
+import java.util.Scanner;
+
+public class Analyzer extends Data{
+Data data1 = new Data();
+
+Analyzer() {
+}
+
+void Analyze() {
+	  Scanner scanner = new Scanner(System.in);
+      System.out.print("Enter number (Q to quit):");
+      
+      while(scanner.hasNextInt()) {
+          int number = scanner.nextInt();
+          this.data1.add(number);
+          System.out.print("Enter number (Q to quit):");
+      }
+      
+      scanner.close();
+      System.out.print("Average=" + data1.getAverage() + "\n");
+      System.out.print("Maximum=" + data1.getMax());
+      
+}
+	
+
+	
+	
+}

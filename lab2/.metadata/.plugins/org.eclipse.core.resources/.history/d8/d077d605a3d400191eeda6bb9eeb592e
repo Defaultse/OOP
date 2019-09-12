@@ -1,0 +1,26 @@
+package probem5;
+
+public class Iphone {
+	
+String model;
+int color;
+
+public enum Color{
+	SPACEGREY,
+	WHITE,
+	BLACK
+}
+
+Iphone(){
+model = "not chosen";
+int = 0;
+}
+
+Iphone(String model, int color){
+	this.model = model;
+	this.color = color;
+}
+
+Car(){}
+
+}

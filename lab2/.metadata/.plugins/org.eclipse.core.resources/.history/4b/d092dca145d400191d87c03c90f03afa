@@ -1,0 +1,28 @@
+package problem3;
+
+public class Data {
+private double max;
+private double average;
+private int amount;
+Data(int number) {
+	amount++;
+    addValue(number);
+    findAverage(number);    
+}
+
+public void addValue(int num){
+	
+}
+
+public double findAverage(){
+	int num;
+num+=average;
+average=average/amount;
+return amount;
+}
+
+public double findMax() {
+	
+}
+
+}

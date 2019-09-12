@@ -1,0 +1,43 @@
+package problem4;
+
+public class Time {
+	private int hour;
+	private int minute;
+	private int second;
+
+	public Time(int hour1, int minute1, int second1) {
+		
+		 if (hour >= 0 && hour < 24 && minute >= 0 && minute < 60 && second >= 0 && second < 60) {
+	            this.hour = hour1;
+	            this.minute = minute1;
+	            this.second = second1;
+	        } else {
+	            System.out.println("Invalid input");
+	        }
+
+	    
+	}
+
+	public String toUniversal() {
+		String converted = this.hour + ":" + this.minute + ":" + this.second + " ";
+		return converted;
+	}
+
+	public String toStandard() {
+		int hours, minutes, seconds;
+		hours = hour - 12;
+		minutes = minute;
+		seconds = second;
+		String converted = hours + ":" + minutes + ":" + seconds + " " + "PM";
+		return converted;
+	}
+
+	public void add(Time t2) {
+		this.hour = this.hour + t2.hour;
+		this.minute = this.minute + t2.minute;
+		this.second = this.second + t2.second;
+		String converted = this.hour + ":" + this.minute + ":" + this.second + " ";
+		System.out.println(converted);
+	}
+
+}

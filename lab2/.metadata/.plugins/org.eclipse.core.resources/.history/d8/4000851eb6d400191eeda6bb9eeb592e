@@ -1,0 +1,25 @@
+package problem3;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		 Analyzer compute = new Analyzer();
+		
+		 
+		 System.out.println("Enter number(Q to quit:");
+		 Scanner input = new Scanner(System.in); 
+		 String ñommand = input.nextLine();
+		 
+		 do {
+			 
+		 }
+		 while(command.contains("Q"));
+	  
+	 	 
+		     
+	     
+	}
+
+}

@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="&#x09;&#x09;Scanner input = new Scanner(System.in);"/>
 			<item value="data1"/>
 		</list>
 		<list key="replacehistory">

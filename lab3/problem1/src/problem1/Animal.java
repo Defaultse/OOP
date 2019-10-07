@@ -2,23 +2,23 @@ package problem1;
 
 public class Animal {
 	private String wantsToDo;
+	private String name;
+
 	public Animal() {
-		wantsToDo="eat";
+		wantsToDo = "eat";
 	}
-	
-	public Animal(String wantsToDo) {
-		this.wantsToDo=wantsToDo;
+
+	public Animal(String name, String wantsToDo) {
+		this.name = name;
+		this.wantsToDo = wantsToDo;
 	}
-	
+
 	public void show() {
-		System.out.println("Makes a sound");
+		System.out.print("Makes a sound:");
 	}
-	
-	public void setWantsToDo(String wantsToDo) {
-		this.wantsToDo=wantsToDo;
+
+	public String toString() {
+		return name + " wants to " + wantsToDo;
 	}
-	
-	public String getWantsToDo() {
-		return wantsToDo;
-	}
+
 }

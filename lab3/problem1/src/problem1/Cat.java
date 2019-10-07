@@ -1,27 +1,19 @@
 package problem1;
 
-public class Cat extends Animal {
-	private String wantsToDo;
+public class Cat extends Animal{
+	
 	public Cat() {
 		super();
 	}
 	
-	public Cat(String wantsToDo) {
-		super(wantsToDo);
-		this.wantsToDo = wantsToDo;
+	public Cat(String name,String wantsToDo) {
+		super(name, wantsToDo);
 	}
 	
 	//@Override
 	public void show() {
 		//super.show();
-		System.out.println("Meows");
+		System.out.println("Makes a sound: Meows");
 	}
-	
-	public void setWantsToDo(String wantsToDo) {
-		this.wantsToDo=wantsToDo;
-	}
-	
-	public String getWantsToDo() {
-		return wantsToDo;
-	}
+
 }

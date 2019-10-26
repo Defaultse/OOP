@@ -18,14 +18,6 @@ public class Person {
 		return "Name " + name;
 	}
 
-	/*public boolean equals(Object o) {
-		if (o == this)
-			return true;
-		if (o == null || o.getClass() != this.getClass())
-			return false;
-		Person p = (Person) o;
-		return name.equals(p.name);
-	}*/
 	@Override
 	 public boolean equals(Object obj) {
 	        if (this == obj) return true;

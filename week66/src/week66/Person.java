@@ -9,6 +9,7 @@ public class Person {
 	public Person(String name){
 		this.name = name;
 	}
+
 	public Person(String name, GregorianCalendar bornDate){
 		this(name);
 		this.bornDate = bornDate;

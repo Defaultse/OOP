@@ -23,7 +23,5 @@ public class Manager extends Employee{
         if (!(obj instanceof Manager)) return false;
         Manager m = (Manager) obj;
         return this.bonus == m.bonus && this.employees.equals(m.employees);
-    }
-
-
+	}
 }

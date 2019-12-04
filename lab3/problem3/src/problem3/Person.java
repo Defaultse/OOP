@@ -26,6 +26,15 @@ public class Person {
 	        return p.name.equals(this.name) && p.insuranceNumber.equals(this.insuranceNumber);
 	    }
 
+	    public int hashCode(){
+		return (int)name*insuranceNumber.hashcode();
+		}
+
+		public int hashCode(){
+		int resul = 17;
+		result = 31*result+name.hashcode();
+		result = 31*resut+insuranceNumber;
+		}
 	 
 
 }
